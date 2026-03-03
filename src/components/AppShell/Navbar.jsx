@@ -9,12 +9,12 @@ function Navbar({ logoSrc, navLinks }) {
 
   return (
     <>
-      <nav className="fixed top-6 left-1/3 justify-between items-center w-[60%] -translate-x-1/2 z-50 hidden lg:flex pl-20">
+      <nav className="fixed top-6 left-0 right-0 items-center z-50 hidden lg:flex pl-20">
         <div>
           <img src={logoSrc} className="h-20" alt="logo" />
         </div>
 
-        <div className="flex items-center justify-center rounded-full h-10 py-1 px-4 bg-white/10 border border-white/20 gap-4 shadow-lg shadow-black/30">
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center rounded-full h-10 py-1 px-4 bg-white/10 border border-white/20 gap-4 shadow-lg shadow-black/30">
           <ul className="flex gap-6 outfit text-white/80 text-md items-center">
             {navLinks.map((item) => (
               <a key={item.name} href={item.href}>

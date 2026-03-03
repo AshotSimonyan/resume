@@ -1,0 +1,81 @@
+{
+  "name": "Your Name",
+  "intro": "Hello, my name is",
+  "headline": "Web Developer and Problem Solver",
+  "summary": "I design and build fast, accessible products with strong UX and reliable engineering foundations.",
+  "aboutParagraph": "Write a short 3-4 sentence overview of your experience, specialties, and the type of roles you are targeting.",
+  "location": "Los Angeles, CA",
+  "email": "you@example.com",
+  "phone": "+1 000 000 0000",
+  "contactMessage": "I am available for full-time roles and contract projects. Reach out if you want to build something meaningful.",
+  "contactSubject": "Portfolio inquiry",
+  "resumeUrl": "https://example.com/your-resume.pdf",
+  "facts": [
+    { "label": "Experience", "value": "5+ Years" },
+    { "label": "Current Role", "value": "Senior Frontend Engineer" },
+    { "label": "Specialization", "value": "React, TypeScript, Next.js" },
+    { "label": "Availability", "value": "Open to opportunities" }
+  ],
+  "profiles": [
+    {
+      "title": "GitHub",
+      "detail": "Code samples, open-source work, and experiments.",
+      "link": "https://github.com/your-username",
+      "cta": "View GitHub"
+    },
+    {
+      "title": "LinkedIn",
+      "detail": "Professional background and recommendations.",
+      "link": "https://www.linkedin.com/in/your-profile",
+      "cta": "View LinkedIn"
+    },
+    {
+      "title": "Behance / Dribbble",
+      "detail": "Optional design portfolio and case studies.",
+      "link": "https://dribbble.com/",
+      "cta": "View Designs"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project One",
+      "summary": "Briefly explain impact, stack, and your core contribution.",
+      "link": "https://example.com/project-1",
+      "tags": ["Next.js", "TypeScript", "Tailwind"]
+    },
+    {
+      "name": "Project Two",
+      "summary": "Highlight business outcome (speed, revenue, engagement, etc).",
+      "link": "https://example.com/project-2",
+      "tags": ["React", "Node.js", "PostgreSQL"]
+    },
+    {
+      "name": "Project Three",
+      "summary": "Mention constraints and the technical decisions you made.",
+      "link": "https://example.com/project-3",
+      "tags": ["Vite", "JavaScript", "REST APIs"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Computer Science",
+      "institution": "Your University",
+      "year": "2016 - 2020",
+      "detail": "Add honors, key courses, or activities if relevant."
+    },
+    {
+      "degree": "Professional Certification",
+      "institution": "Provider Name",
+      "year": "2022",
+      "detail": "Optional details."
+    }
+  ],
+  "skills": [
+    { "name": "JavaScript / TypeScript", "level": 92 },
+    { "name": "React / Next.js", "level": 90 },
+    { "name": "Node.js", "level": 78 },
+    { "name": "UI / UX Collaboration", "level": 84 },
+    { "name": "Testing", "level": 76 },
+    { "name": "Performance Optimization", "level": 82 }
+  ]
+}

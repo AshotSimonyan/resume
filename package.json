@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-clone-react-vite",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "make:illustration": "python3 scripts/make_illustration.py public/linkedin-image.png public/linkedin-illustration.png"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "@vitejs/plugin-react": "^4.3.4"
+  }
+}

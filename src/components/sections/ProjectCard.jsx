@@ -1,7 +1,7 @@
 function ProjectCard({ project }) {
   return (
     <div className="flex gap-3 flex-col lg:flex-row lg:gap-12 items-center">
-      <div className="group relative lg:h-[430px] w-full h-[300px] lg:w-[600px] rounded-2xl overflow-hidden bg-white/10 border border-white/20 shadow-lg shadow-black/40">
+      <div className="group relative lg:h-[430px] w-full h-[300px] lg:w-[600px] rounded-2xl overflow-hidden surface-card">
         <a
           href={project.links.live}
           target="_blank"
@@ -9,9 +9,9 @@ function ProjectCard({ project }) {
           aria-label={`Open ${project.title} website`}
           className="block h-full"
         >
-          <div className="absolute inset-2 lg:inset-4 rounded-xl backdrop-blur-lg bg-gradient-to-br from-[#219ebc]/40 via-[#48cae4] to-[#8ecae6]/40 ring-1 ring-red/10 overflow-hidden">
+          <div className="absolute inset-2 lg:inset-4 rounded-xl backdrop-blur-md project-media-overlay overflow-hidden">
             <div className="absolute top-4 left-4 z-30">
-              <p className="lg:text-lg text-sm outfit text-black lg:text-white tracking-wide">{project.tagline}</p>
+              <p className="lg:text-lg text-sm tracking-wide muted-copy">{project.tagline}</p>
             </div>
 
             <div className="relative h-full flex items-end justify-center pb-6">
@@ -31,14 +31,14 @@ function ProjectCard({ project }) {
       </div>
 
       <div className="flex flex-col justify-center max-w-xl">
-        <h3 className="text-xl lg:text-2xl font-semibold mb-4 text-white">{project.title}</h3>
-        <p className="text-white/60 mb-4 lg:text-lg leading-relaxed">{project.description}</p>
+        <h3 className="text-xl lg:text-2xl font-semibold mb-4">{project.title}</h3>
+        <p className="muted-copy mb-4 lg:text-lg leading-relaxed">{project.description}</p>
 
         {project.points?.length > 0 && (
           <ul className="space-y-2 mb-2">
             {project.points.map((point, index) => (
-              <li key={`${project.id}-point-${index}`} className="flex items-start gap-3 lg:text-lg text-sm text-white/70">
-                <span className="text-pink-400 mt-1">*</span>
+              <li key={`${project.id}-point-${index}`} className="flex items-start gap-3 lg:text-lg text-sm muted-copy">
+                <span className="accent-copy mt-1">*</span>
                 <span>{point}</span>
               </li>
             ))}
@@ -49,7 +49,7 @@ function ProjectCard({ project }) {
           {project.tech.map((tech, index) => (
             <div
               key={`${project.id}-tech-${index}-${tech.name}`}
-              className="flex py-1 lg:py-2 px-[8px] lg:px-3 items-center gap-1 md:my-1 lg:my-0 md:gap-2 rounded-2xl bg-white/10 border border-white/20 shadow-lg shadow-slate-400/10 text-white/70"
+              className="flex py-1 lg:py-2 px-[8px] lg:px-3 items-center gap-1 md:my-1 lg:my-0 md:gap-2 surface-chip"
             >
               <img src={tech.image} alt={tech.name} className="w-4 h-3" />
               <span className="lg:text-sm text-[12px] tracking-tight">{tech.name}</span>

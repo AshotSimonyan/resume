@@ -14,16 +14,12 @@ function Navbar({ logoSrc, navLinks }) {
           <img src={logoSrc} className="h-20" alt="logo" />
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center rounded-full h-10 py-1 px-4 bg-white/10 border border-white/20 gap-4 shadow-lg shadow-black/30">
-          <ul className="flex gap-6 outfit text-white/80 text-md items-center">
+        <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center rounded-full h-10 py-1 px-4 gap-4 nav-shell">
+          <ul className="flex gap-6 text-sm items-center">
             {navLinks.map((item) => (
               <a key={item.name} href={item.href}>
                 <li
-                  className={`hover:text-white transition cursor-pointer ${
-                    item.name === 'Connect'
-                      ? 'bg-gradient-to-b from-black/50 to-white/20 rounded-full px-2 py-1 transition'
-                      : ''
-                  }`}
+                  className={`nav-item transition cursor-pointer ${item.name === 'Connect' ? 'nav-item-active' : ''}`}
                 >
                   {item.name}
                 </li>
@@ -41,13 +37,13 @@ function Navbar({ logoSrc, navLinks }) {
       </nav>
 
       {isMenuOpen && (
-        <div className="fixed z-[100] inset-0 bg-black/80 backdrop-blur-md flex flex-col justify-center items-center gap-5 text-white text-2xl outfit">
+        <div className="fixed z-[100] inset-0 bg-black/80 backdrop-blur-md flex flex-col justify-center items-center gap-5 text-white text-2xl">
           <button onClick={closeMenu} className="absolute top-5 right-14 text-4xl" aria-label="Close menu">
             <CloseIcon className="w-10 h-10" />
           </button>
 
           {navLinks.map((item) => (
-            <a key={item.name} href={item.href} onClick={closeMenu} className="hover:text-teal-400 transition">
+            <a key={item.name} href={item.href} onClick={closeMenu} className="hover:text-white transition">
               {item.name}
             </a>
           ))}

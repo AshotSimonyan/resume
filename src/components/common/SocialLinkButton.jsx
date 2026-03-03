@@ -16,7 +16,7 @@ function SocialLinkButton({ social }) {
       {isImageIcon ? (
         <img src={social.image} alt={social.name} className="w-4 h-4 md:w-5 md:h-5 rounded-full object-cover" />
       ) : (
-        <Icon className="md:text-xl text-sm text-cyan-300 w-4 h-4 md:w-5 md:h-5" />
+        <Icon className="md:text-xl text-sm accent-copy w-4 h-4 md:w-5 md:h-5" />
       )}
       <span className="text-[12px] md:text-sm font-semibold">{social.name}</span>
     </a>

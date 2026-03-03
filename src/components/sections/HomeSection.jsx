@@ -15,7 +15,7 @@ function HomeSection({ data }) {
     >
       <div className="flex flex-col text-center justify-center items-center gap-4">
         <div className="relative flex items-center justify-center">
-          <div className="absolute -top-10 w-56 h-56 bg-gradient-to-br from-cyan-400/30 to-purple-400/20 blur-3xl" />
+          <div className="absolute -top-10 w-56 h-56 section-halo blur-3xl" />
           <img src={data.assets.heroIllustration} className="w-44 h-44 object-contain z-10" alt="illustration" />
         </div>
 
@@ -26,18 +26,15 @@ function HomeSection({ data }) {
             as="span"
             text={data.heroTitleGradient}
             duration={8}
-            gradient="linear-gradient(135deg, #364AF7 0%, #57cc99 25%, #560bad 50%, #a53860 75%, #f94144 100%)"
-            className="text-4xl md:text-6xl capitalize mt-2 md:mt-3 font-semibold lobster-regular inline-block"
+            gradient="linear-gradient(135deg, #dbe5ff 0%, #9db2ff 50%, #7894ff 100%)"
+            className="text-4xl md:text-6xl capitalize mt-2 md:mt-3 font-semibold inline-block"
           />
         </h1>
 
         <div className="flex flex-col gap-3">
-          <h2 className="text-xl tracking-tighter md:text-3xl text-[#9D9B9B]">{data.greeting}</h2>
+          <h2 className="text-xl tracking-tight md:text-3xl muted-copy">{data.greeting}</h2>
           <div className="h-12">
-            <TypeCycle
-              texts={data.roleCycle}
-              className="text-2xl font-medium bg-gradient-to-r from-orange-400 to-purple-400 bg-clip-text text-transparent"
-            />
+            <TypeCycle texts={data.roleCycle} className="text-2xl font-medium accent-copy" />
           </div>
         </div>
 

@@ -1,3 +1,5 @@
+const asset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+
 export const cvData = {
   name: 'Ashot Simonyan',
   heroTitlePrefix: 'Building scalable and high-performance',
@@ -16,7 +18,7 @@ export const cvData = {
       name: 'LinkedIn',
       type: 'linkedin',
       url: 'https://www.linkedin.com/in/ashot-simonyan',
-      image: '/linkedin-image.png'
+      image: asset('/linkedin-image.png')
     },
     { name: 'Email', type: 'email', url: 'mailto:ashotsimonyan.tech@gmail.com' },
     { name: 'Phone', type: 'phone', url: 'tel:+17473327642' }
@@ -47,7 +49,7 @@ export const cvData = {
       tagline: 'Feb 2023 - Present',
       description:
         'Developing AI-driven tools for the US real estate market and improving engagement through scalable, high-performance front-end architecture.',
-      images: { img1: '/projects/purlin_hero.png', img2: '/projects/purlin_portfolio.png' },
+      images: { img1: asset('/projects/purlin_hero.png'), img2: asset('/projects/purlin_portfolio.png') },
       points: [
         'Built AI-driven product features that improved user satisfaction',
         'Optimized architecture for performance and long-term scalability',
@@ -56,9 +58,9 @@ export const cvData = {
       ],
       tech: [
         { name: 'TypeScript', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-        { name: 'React.js', image: '/Skills/react.png' },
+        { name: 'React.js', image: asset('/Skills/react.png') },
         { name: 'Next.js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
-        { name: 'RTK Query', image: '/Skills/redux.png' }
+        { name: 'RTK Query', image: asset('/Skills/redux.png') }
       ],
       links: {
         github: 'https://purlin.com/product/purlinsparks/4',
@@ -71,7 +73,7 @@ export const cvData = {
       tagline: 'Mar 2022 - Jan 2023',
       description:
         'Led front-end development of a no-code smart contract platform for artists and delivered interactive NFT-focused experiences.',
-      images: { img1: '/projects/nftstack_hero.png', img2: '/projects/nftstack_portfolio.png' },
+      images: { img1: asset('/projects/nftstack_hero.png'), img2: asset('/projects/nftstack_portfolio.png') },
       points: [
         'Created a no-code smart contract platform to improve NFT accessibility',
         'Developed animated landing pages and minting experiences',
@@ -79,9 +81,9 @@ export const cvData = {
         'Core stack: TypeScript, React.js, Gatsby.js, Redux, Web3.js, Ethers.js'
       ],
       tech: [
-        { name: 'React.js', image: '/Skills/react.png' },
+        { name: 'React.js', image: asset('/Skills/react.png') },
         { name: 'Gatsby.js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original.svg' },
-        { name: 'Redux', image: '/Skills/redux.png' },
+        { name: 'Redux', image: asset('/Skills/redux.png') },
         { name: 'Web3.js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/web3js/web3js-original.svg' }
       ],
       links: {
@@ -95,7 +97,7 @@ export const cvData = {
       tagline: 'May 2021 - Feb 2022',
       description:
         'Built a website builder and reusable React components while improving the scalability and performance of user-facing features.',
-      images: { img1: '/projects/ultralabs_hero.png', img2: '/projects/ultralabs_portfolio.png' },
+      images: { img1: asset('/projects/ultralabs_hero.png'), img2: asset('/projects/ultralabs_portfolio.png') },
       points: [
         'Developed reusable components for faster front-end delivery',
         'Contributed to a website builder platform using modern React practices',
@@ -104,7 +106,7 @@ export const cvData = {
       ],
       tech: [
         { name: 'TypeScript', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-        { name: 'React.js', image: '/Skills/react.png' },
+        { name: 'React.js', image: asset('/Skills/react.png') },
         { name: 'Next.js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
         { name: 'Styled-components', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/styledcomponents/styledcomponents-original.svg' }
       ],
@@ -119,7 +121,7 @@ export const cvData = {
       tagline: 'Apr 2017 - Apr 2021',
       description:
         'Built responsive front-end applications with React and Redux, converting design systems into functional and maintainable code.',
-      images: { img1: '/projects/stdev_hero.png', img2: '/projects/stdev_portfolio.png' },
+      images: { img1: asset('/projects/stdev_hero.png'), img2: asset('/projects/stdev_portfolio.png') },
       points: [
         'Developed responsive applications with React.js and Redux',
         'Translated design specs into production-ready UI implementations',
@@ -127,10 +129,10 @@ export const cvData = {
         'Core stack: JavaScript, React.js, Redux, SASS/SCSS, Tailwind CSS'
       ],
       tech: [
-        { name: 'JavaScript', image: '/Skills/js.png' },
-        { name: 'React.js', image: '/Skills/react.png' },
-        { name: 'Redux', image: '/Skills/redux.png' },
-        { name: 'Tailwind CSS', image: '/Skills/tailwindcss.png' }
+        { name: 'JavaScript', image: asset('/Skills/js.png') },
+        { name: 'React.js', image: asset('/Skills/react.png') },
+        { name: 'Redux', image: asset('/Skills/redux.png') },
+        { name: 'Tailwind CSS', image: asset('/Skills/tailwindcss.png') }
       ],
       links: {
         github: 'https://st-dev.com/portfolio',
@@ -142,18 +144,18 @@ export const cvData = {
   skillsSubheading:
     'JavaScript, TypeScript, React.js, Next.js, Redux, RTK Query, and modern styling and UI tooling for scalable front-end systems.',
   skills: [
-    { name: 'JavaScript', image: '/Skills/js.png' },
+    { name: 'JavaScript', image: asset('/Skills/js.png') },
     { name: 'TypeScript', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-    { name: 'React.js', image: '/Skills/react.png' },
+    { name: 'React.js', image: asset('/Skills/react.png') },
     { name: 'Next.js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
     { name: 'Gatsby.js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-original.svg' },
-    { name: 'Redux / Redux Toolkit', image: '/Skills/redux.png' },
-    { name: 'React Query / RTK Query', image: '/Skills/redux.png' },
-    { name: 'CSS / SASS / SCSS', image: '/Skills/css.png' },
+    { name: 'Redux / Redux Toolkit', image: asset('/Skills/redux.png') },
+    { name: 'React Query / RTK Query', image: asset('/Skills/redux.png') },
+    { name: 'CSS / SASS / SCSS', image: asset('/Skills/css.png') },
     { name: 'Styled-components', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/styledcomponents/styledcomponents-original.svg' },
-    { name: 'CSS Modules / Stitches', image: '/Skills/css.png' },
+    { name: 'CSS Modules / Stitches', image: asset('/Skills/css.png') },
     { name: 'Material UI / Ant Design', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg' },
-    { name: 'Tailwind CSS / Bootstrap', image: '/Skills/tailwindcss.png' },
+    { name: 'Tailwind CSS / Bootstrap', image: asset('/Skills/tailwindcss.png') },
     { name: 'Web3.js / Ethers.js', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/web3js/web3js-original.svg' },
     { name: 'Figma / Adobe XD / InVision', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
     { name: 'Atlassian Suite', image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg' },
@@ -163,16 +165,16 @@ export const cvData = {
     headingTop: 'From architecture to user impact',
     headingBottom: 'I build reliable front-end products for scale',
     email: 'ashotsimonyan.tech@gmail.com',
-    resumeUrl: '/Resume.pdf',
+    resumeUrl: asset('/Resume.pdf'),
     availabilityLine:
       'Available for full-time senior front-end roles, remote opportunities, and contract collaborations.',
     focusLine: 'Focused on React.js, TypeScript, Next.js, performance, and user experience quality.'
   },
   assets: {
-    logo: '/assets/At-Bqymh4jq.png',
-    heroIllustration: '/illustration.png',
-    profile: '/linkedin-image.png',
-    connectMark: '/At.png',
-    skillMask: '/assets/tool2-norqDBV9.png'
+    logo: asset('/assets/At-Bqymh4jq.png'),
+    heroIllustration: asset('/illustration.png'),
+    profile: asset('/linkedin-image.png'),
+    connectMark: asset('/At.png'),
+    skillMask: asset('/assets/tool2-norqDBV9.png')
   }
 };
